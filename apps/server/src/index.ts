@@ -1,4 +1,5 @@
 import "dotenv/config";
+import { prisma } from "@test-turbo-repo/db";
 import cors from "cors";
 import express from "express";
 
@@ -13,8 +14,9 @@ app.use(
 
 app.use(express.json());
 
-app.get("/", (_req, res) => {
-	res.status(200).send("OK");
+app.get("/", async (_req, res) => {
+	const user = await prisma.user.findFirst();
+	res.status(200).send(user);
 });
 
 const port = process.env.PORT || 3000;

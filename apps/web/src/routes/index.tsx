@@ -2,6 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
 	component: HomeComponent,
+
+	// beforeLoad: async () => {
+	// 	const users = await prisma.user.findMany();
+	// 	console.log("Users:", users);
+	// },
 });
 
 const TITLE_TEXT = `
