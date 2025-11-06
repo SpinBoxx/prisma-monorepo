@@ -25,7 +25,7 @@ app.get("/", async (_req, res) => {
 	console.log(user);
 
 	// const allo = test.toString();
-	res.status(200).send(user);
+	res.status(200).send(process.env.HELLO);
 });
 
 const port = process.env.PORT || 3000;
