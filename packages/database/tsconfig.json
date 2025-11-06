@@ -1,5 +1,5 @@
 {
-	"$schema": "https://json.schemastore.org/tsconfig",
+	// "$schema": "https://json.schemastore.org/tsconfig",
 	"compilerOptions": {
 		"composite": false,
 		"declaration": true,
@@ -13,6 +13,7 @@
 		"noUnusedLocals": false,
 		"noUnusedParameters": false,
 		"preserveWatchOutput": true,
+		"rootDir": ".",
 		"skipLibCheck": true,
 		"strict": true
 	},

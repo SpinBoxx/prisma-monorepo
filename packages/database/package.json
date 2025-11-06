@@ -13,8 +13,8 @@
 		"db:migrate": "prisma migrate dev --skip-generate",
 		"db:deploy": "prisma migrate deploy"
 	},
-	"typings": "./src/client.ts",
+	"typings": "./src/index.ts",
 	"exports": {
-		".": "./src/client.ts"
+		".": "./src/index.ts"
 	}
 }
